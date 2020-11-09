@@ -92,4 +92,44 @@ h4 {
     padding-top: 10px;
 }
 
+@keyframes example1 {
+  from {fill: rgba(255, 221, 85, 1);}
+  to {fill: rgba(26, 26, 26, 1);}
+}
 
+@keyframes example2 {
+  from {fill: rgba(26, 26, 26, 1);}
+  to {fill: rgb(240, 240, 240);}
+}
+
+
+@keyframes heightbulger {
+  0% {
+    width: 0px;
+  }
+  30% {
+    width: 500px;
+  }
+  100% {
+    width: 450px;
+  }
+}
+
+.megstick-full, .stick-logo {
+    width: 100%;
+    animation-name: heightbulger;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.meg-letters {
+    Fill: rgba(255, 221, 85, 1);
+    animation-name: example1;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.records-letters {
+    Fill: rgb(26, 26, 26, 1);
+    animation-name: example2;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
